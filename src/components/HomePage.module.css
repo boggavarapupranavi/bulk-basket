@@ -1,0 +1,245 @@
+.container {
+    background-color: #f4f4f4; /* Light gray background for the overall page */
+    min-height: 100vh; /* Ensure the container takes at least the full viewport height */
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: #fff; /* White background for the navbar */
+}
+
+.navList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 30px;
+}
+
+.navLink {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navLink:hover {
+    color: #4caf50; /* Green hover effect */
+}
+
+.mainContent {
+    padding: 20px;
+    background-color: #fff; /* White background for the main content */
+}
+
+.carouselContainer {
+    margin-bottom: 30px;
+    overflow-x: auto; /* Enable horizontal scrolling if items overflow */
+    white-space: nowrap; /* Prevent items from wrapping to the next line */
+}
+
+.carouselInner {
+    display: flex; /* Arrange carousel items in a row */
+}
+
+.carouselItem {
+    flex: 0 0 auto; /* Don't grow or shrink, take up their defined width */
+    width: 300px; /* Adjust the width of each item as needed */
+    margin-right: 15px; /* Add some spacing between items */
+}
+
+.carouselItem:last-child {
+    margin-right: 0; /* Remove margin from the last item */
+}
+
+.carouselImage {
+    display: block;
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: Add rounded corners to images */
+}
+
+/* Hide the default carousel controls */
+.carouselControlPrev,
+.carouselControlNext {
+    display: none;
+}
+
+.aboutUsSection {
+    padding: 30px;
+    background-color: #f9f9f9; /* Light gray background for the section */
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.aboutUsHeading {
+    color: #388e3c; /* Green heading */
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.aboutUsText {
+    line-height: 1.6;
+    color: #555;
+}
+
+.contactUsSection {
+    padding: 30px;
+    background-color: #e8f5e9; /* Very light green background */
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    border: '2px solid green',
+}
+
+.contactUsHeading {
+    color: #388e3c; /* Green heading */
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.contactUsText {
+    line-height: 1.6;
+    color: #555;
+    text-align: center;
+}
+
+.contactUsLink {
+    color: #2e7d32; /* Darker green for the link */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contactUsLink:hover {
+    text-decoration: underline;
+}
+/* ... other styles ... */
+
+.carouselContainer {
+    margin-bottom: 30px;
+    /* Remove the horizontal scrollbar styles for the static gallery */
+    overflow-x: unset;
+    white-space: unset;
+}
+
+.carouselInner {
+    /* Remove display: flex as react-slick handles the layout */
+    /* display: flex; */
+}
+
+.carouselItem {
+    /* Adjust width if needed, react-slick controls the item width */
+    /* flex: 0 0 auto; */
+    /* width: 300px; */
+    margin-right: 15px; /* Spacing between slides */
+}
+
+.carouselItem:last-child {
+    margin-right: 0;
+}
+
+.carouselImage {
+    display: block;
+    width:90vw;
+    height: 500px;
+    margin-left: 30px;
+    border-radius: 8px;
+}
+
+/* react-slick specific styles - you can customize these further */
+.slick-dots {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.slick-dots li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: #ccc;
+  border-radius: 50%;
+}
+
+.slick-dots li.slick-active button {
+  background: #4caf50; /* Green active dot */
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #333; /* Color of the arrow icons */
+}
+
+/* Adjust arrow positioning if needed */
+.slick-prev {
+  left: 10px;
+  z-index: 1;
+}
+
+.slick-next {
+  right: 10px;
+  z-index: 1;
+}
+/* Navbar Container */
+/* Navbar Container */
+.navbar {
+    background-color: #4CAF50; /* Soft green background for navbar */
+    padding: 10px 20px; /* Add some padding to the navbar */
+    position: sticky; /* Makes the navbar stick to the top */
+    top: 0; /* Stick to the top of the page */
+    z-index: 1000; /* Ensure it's above other content */
+    border-bottom: 2px solid #388E3C; /* Adds a border for a little extra style */
+  }
+  
+  /* Navbar List */
+  .navList {
+    list-style-type: none; /* Remove default bullet points */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Use flexbox to align items horizontally */
+    justify-content: center; /* Center the items in the navbar */
+    gap: 20px; /* Add some space between the list items */
+  }
+  
+  /* Navbar Links */
+  .navLink {
+    color: white; /* White text color for links */
+    font-size: 16px; /* Set font size */
+    font-weight: 500; /* Slightly bold font */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition for color and background change */
+    padding: 8px 16px; /* Add padding around the link */
+    border-radius: 5px; /* Rounded corners for links */
+  }
+  
+  /* Navbar Link Hover Effects */
+  .navLink:hover {
+    color: #4CAF50; /* Green color on hover */
+    background-color: #fff; /* White background on hover */
+  }
+  
+  /* Navbar Link Active State */
+  .navLink.active {
+    color: #4CAF50; /* Green color for active link */
+    font-weight: bold; /* Bold font for active link */
+    background-color: #fff; /* White background for active link */
+  }
+  
+  

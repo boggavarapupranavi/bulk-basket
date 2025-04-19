@@ -1,0 +1,79 @@
+.container {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  margin: 20px auto; /* Center the form */
+}
+
+.heading {
+  text-align: center;
+  color: #388e3c; /* Prominent green for the title */
+  margin-bottom: 30px;
+}
+
+.formGroup {
+  margin-bottom: 20px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 8px;
+  color: #4a4a4a;
+  font-weight: bold;
+}
+
+.input {
+  width: calc(100% - 16px);
+  padding: 10px;
+  border: 1px solid #8bc34a; /* Softer green border */
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #689f38; /* Darker green on focus */
+  box-shadow: 0 0 4px rgba(76, 175, 80, 0.5); /* Green focus glow */
+}
+
+.button {
+  background-color: #4caf50; /* Solid green button */
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #43a047; /* Darker green on hover */
+}
+
+.error {
+  color: #d32f2f; /* Red for error messages */
+  margin-top: 15px;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+.loginLink {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+.loginLink a {
+  color: #2e7d32; /* Green for the link */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.loginLink a:hover {
+  text-decoration: underline;
+}

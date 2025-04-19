@@ -1,0 +1,13 @@
+h1{
+    text-align: center;
+    color: green;
+   padding-top: 45px;
+}
+.con{
+    background-image: url('https://img.freepik.com/premium-vector/vegetables-doodle-pattern-illustration-backgrounds-card-posters-banners-vector-icons_668389-1546.jpg?w=996');
+    background-size: cover; /* or 'contain', depending on your design */
+    background-repeat: no-repeat;
+    background-position: center;
+    
+height: 100vh;
+}
